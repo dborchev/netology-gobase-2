@@ -123,3 +123,23 @@ func updateTotalItems(qty int) {
 		totalItems = MaxItems
 	}
 }
+
+
+// Функция чтобы добавлять новый товар и возвращать его ID
+func addNewItem(id int64, name string, qty int, price float64, isAvailable bool, category string) int64 {
+	fmt.Println("=== Добавление товара ===")
+    
+    updateTotalItems(qty)
+    
+    fmt.Println("Предупреждение: У нас пока нет базы данных, запишите в амбарную книгу:")
+    displayItemInfo(
+        id,
+        name,
+        qty,
+        price,
+        isAvailable,
+        category
+    )
+    
+    return id
+}
