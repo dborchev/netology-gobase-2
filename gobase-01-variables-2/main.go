@@ -14,6 +14,12 @@ const (
 	MaxItems            = 100 // Максимальное количество товаров на складе
 )
 
+const categoryDiscounts = map[string]float64{
+    CategoryElectronics: 0.95,
+    CategoryFood:   0.8,
+    CategoryClothes: 0.83,
+}
+
 // Глобальная переменная для подсчета товаров
 var totalItems int
 
@@ -142,4 +148,25 @@ func addNewItem(id int64, name string, qty int, price float64, isAvailable bool,
     )
     
     return id
+}
+
+
+// Функция чтобы рассчитывать скидку на товар
+func calculateDiscount(qty int, category string) float64 {
+    const baseDiscount float64 = 0.99 
+    
+    discount := baseDiscount
+    
+    dscnt, ok := categoryDiscounts[category]
+    if ok {
+        discount := dscnt
+    }
+    
+    percentInStock := float64(qty) / float64(MaxItems) * 100
+    if percentInStock > 0.15 {
+       // большой объём закупки, можно увеличить скидку
+       discount -= 0.1
+    }
+    
+    return discount
 }
