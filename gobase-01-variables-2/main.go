@@ -144,7 +144,7 @@ func addNewItem(id int64, name string, qty int, price float64, isAvailable bool,
         qty,
         price,
         isAvailable,
-        category
+        category,
     )
     
     return id
