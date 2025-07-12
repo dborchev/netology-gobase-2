@@ -15,9 +15,9 @@
 
 2.   Дополните программу своими функциями
     * Создайте функцию addNewItem, которая будет добавлять новый товар и возвращать его ID. ✅
-      * [addNewItem](https://github.com/dborchev/netology-gobase-2/commit/e357f7237e479a1508b76328f03eec339f79e2d3)
+    * [addNewItem](https://github.com/dborchev/netology-gobase-2/commit/e357f7237e479a1508b76328f03eec339f79e2d3)
     * Создайте функцию calculateDiscount, которая будет рассчитывать скидку на товар.  ✅
-      *     [calculateDiscount](https://github.com/dborchev/netology-gobase-2/commit/57b52599017c22c3634e868c7cb6161f2cccf226)
+    *     [calculateDiscount](https://github.com/dborchev/netology-gobase-2/commit/57b52599017c22c3634e868c7cb6161f2cccf226)
 
 3.   Сделайте копию шаблона для сдачи домашнего задания и сохраните в нёё получившийся код. 
 * Домашнее задание к лекции «Основные конструкции языка»
