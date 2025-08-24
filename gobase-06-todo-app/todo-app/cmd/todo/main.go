@@ -1,13 +1,13 @@
 package main
 
-import {
+import (
   "storage"
   "todo"
   "fmt"
   "errors"
   "flag"
   "os"
-}
+)
 
 dataFile := "tasks.json"
 
